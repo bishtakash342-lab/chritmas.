@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Surprise for [JIYA]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #d32f2f; /* Red for Christmas */
+            font-size: 2.5em;
+        }
+        .snowflake {
+            position: absolute;
+            top: -10px;
+            color: #fff;
+            font-size: 1em;
+            animation: fall 10s linear infinite;
+        }
+        @keyframes fall {
+            to { transform: translateY(100vh); }
+        }
+        button {
+            background-color: #4caf50; /* Green */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin: 20px 0;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #gift-reveal {
+            display: none;
+        }
+        iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+            border: none;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="snowflake">❄</div> <!-- Add more snowflakes if desired -->
+    <div class="container">
+        <h1>Merry Christmas, [JIYA]! 🎄</h1>
+        <p>I've created this special surprise just for you. Click the button below to unwrap your gift!</p>
+        <img src="christmas-tree.jpg" alt="Christmas Tree" style="width: 200px; margin: 20px auto;">
+        <button onclick="revealGift()">Unwrap Your Gift</button>
+        <div id="gift-reveal">
+            <h2>Your Christmas Gift</h2>
+            <p>Here's a video message from me, followed by the details of your surprise gift!</p>
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe> <!-- Replace with your video embed URL -->
+            <p><strong>Gift Details:</strong> [Describe the gift here, e.g., "A weekend getaway to your favorite place! I've booked tickets and planned everything."]</p>
+            <p>Merry Chritmas My Sainta. Merry Christmas! ❤️</p>
+        </div>
+    </div>
+    <script>
+        function revealGift() {
+            document.getElementById('gift-reveal').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
